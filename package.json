@@ -1,0 +1,30 @@
+{
+  "name": "retodic2022",
+  "version": "1.0.0",
+  "description": "Reto tecnico Sofka- Dic 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseVicente-dev/retoSofka2022.git"
+  },
+  "author": "BOTakon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseVicente-dev/retoSofka2022/issues"
+  },
+  "homepage": "https://github.com/JoseVicente-dev/retoSofka2022#readme",
+  "type": "module",
+  "dependencies": {
+    "apollo-server-express": "^3.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "graphql": "^16.2.0",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15"
+  }
+}
