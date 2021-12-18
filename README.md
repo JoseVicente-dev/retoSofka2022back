@@ -1,5 +1,5 @@
-# retoSofka2022
-Reporsitorio para resolver el reto técnico de Sofka de dic de 2021
+# retoSofka2022back
+Reporsitorio para resolver el reto técnico de Sofka de dic de 2021 -- Backend
 
 ## Este es el backEnd del reto técnico
 
