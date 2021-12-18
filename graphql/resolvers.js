@@ -1,7 +1,6 @@
+import { resolversJugador } from "../modelos/jugador/resolversJugador.js";
 
 
-export const resolvers = {
-    Query: {
-      books: () => books,
-    },
-  };
+export const resolvers = [
+  resolversJugador
+]
