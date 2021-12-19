@@ -3,12 +3,12 @@ import { JugadorModel } from './jugador.js'
 const resolversJugador = {
 
     Query: {
-        leerJugadores: async (parent, args) => {
+        readJugadores: async (parent, args) => {
             const jugadores = await JugadorModel.find()
             return jugadores
         },
 
-        leerJugador: async (parent, args) => {
+        readJugador: async (parent, args) => {
             if (Object.keys(args).includes('_id')) {
 
                 const jugador = await JugadorModel.findOne({ _id: args._id })
@@ -20,7 +20,6 @@ const resolversJugador = {
                 return jugador;
             }
         },
-
     },
 
     Mutation:{
@@ -41,10 +40,8 @@ const resolversJugador = {
             },{new:true})
 
             return actualizarJugador
-        }
-    }
-
-
+        },
+    },
 }
 
 export {resolversJugador}

@@ -14,8 +14,8 @@ const tiposJugador = gql`
     }
 
     type Query{
-        leerJugadores:[Jugador]
-        leerJugador(_id:ID,identificacion:String):Jugador
+        readJugadores:[Jugador]
+        readJugador(_id:ID,identificacion:String):Jugador
     } 
 
     type Mutation{
