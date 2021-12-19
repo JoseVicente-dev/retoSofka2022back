@@ -1,4 +1,4 @@
-import pkg, { SchemaTypes } from 'mongoose';
+import pkg from 'mongoose';
 const { Schema, model } = pkg;
 import{PremioModel} from '../premio/premio.js'
 
@@ -19,7 +19,7 @@ const preguntaSchema = new Schema({
     },
 })
 
-projectSchema.virtual("respuestas", {
+preguntaSchema.virtual("respuestas", {
     ref: "Answer",
     localField: "_id",
     foreignField: "pregunta",

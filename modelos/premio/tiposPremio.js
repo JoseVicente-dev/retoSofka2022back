@@ -17,7 +17,7 @@ const tiposPremio = gql`
             tipo:String!
             ronda:Int!
             valor:Float!
-        )
+        ):Premio
     }
 `
 
