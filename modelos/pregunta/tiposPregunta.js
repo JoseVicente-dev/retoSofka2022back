@@ -25,3 +25,5 @@ const tiposPregunta = gql`
     }
 
 `
+
+export{tiposPregunta}
