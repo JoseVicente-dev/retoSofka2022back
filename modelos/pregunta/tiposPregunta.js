@@ -7,7 +7,7 @@ const tiposPregunta = gql`
         enunciado:String!
         premio:Premio!
         ronda:Int!
-        respuestas:[Respuesta]!    
+        respuestas:[Respuesta]!
     }
 
     type Query{

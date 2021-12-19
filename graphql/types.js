@@ -3,6 +3,7 @@ import { tiposEnums } from '../modelos/enums/tiposEnums.js';
 import {tiposJugador} from '../modelos/jugador/tiposJugador.js';
 import { tiposPregunta } from '../modelos/pregunta/tiposPregunta.js';
 import { tiposPremio } from '../modelos/premio/tiposPremio.js';
+import { tiposRespuesta } from '../modelos/respuesta/tiposRespuesta.js';
 
 const tipoGobales = gql`
     scalar Date
@@ -14,4 +15,5 @@ export const typeDefs = [
     tiposJugador,
     tiposPregunta,
     tiposPremio,
+    tiposRespuesta,
 ];

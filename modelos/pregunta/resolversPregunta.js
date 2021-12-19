@@ -9,11 +9,11 @@ const resolversPregunta={
         },
         readPregunta: async (parent, args) => {
             if(Object.keys(args).includes('_id')){
-                const pregunta =await PreguntaModel.findOne({ _id:args.id})
+                const pregunta =await PreguntaModel.findOne({ _id:args.id}).populate('respuestas')
                 return pregunta
             }
             else if (Object.keys(args).includes('enunciado')){
-                const pregunta =await PreguntaModel.findOne({ enunciado:args.enunciado})
+                const pregunta =await PreguntaModel.findOne({ enunciado:args.enunciado}).populate('respuestas')
                 return pregunta
             }
         },
