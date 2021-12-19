@@ -30,9 +30,17 @@ const resolversJugador = {
                 nombres: args.nombres,
                 apellidos: args.apellidos,
                 fechaParticipacion: Date.now(),
-
             })
             return nuevoJugador
+        },
+        updateJugador: async (parent, args) => {
+            const actualizarJugador = await JugadorModel.findOneAndUpdate({identificacion:args.identificacion},{
+                puntaje:args.puntaje,
+                estado:args.estado,
+                nivelMaxAlcanzado: args.nivelMaxAlcanzado,
+            },{new:true})
+
+            return actualizarJugador
         }
     }
 

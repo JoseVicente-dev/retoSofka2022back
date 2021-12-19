@@ -7,7 +7,7 @@ const tiposJugador = gql`
     identificacion:String!
     nombres:String!
     apellidos:String!
-    Puntaje:Float
+    puntaje:Float
     fechaParticipacion:Date!
     estado:Enum_EstadoJugador!
     rondaMaxAlcanzada:Int!
@@ -19,10 +19,10 @@ const tiposJugador = gql`
     } 
 
     type Mutation{
-        createJugador(identificacion:String!,nombres:String!,apellidos:String!):Jugador
-    
+        createJugador(identificacion:String!,nombres:String!,apellidos:String!):Jugador        
+        updateJugador(identificacion:String!,puntaje:Float,estado:Enum_EstadoJugador,rondaMaxAlcanzada:Int):Jugador
     }
 
 `
 
-export {tiposJugador}
+export { tiposJugador }
